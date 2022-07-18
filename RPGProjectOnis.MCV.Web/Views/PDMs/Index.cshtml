@@ -1,0 +1,112 @@
+﻿@model IEnumerable<RPGProjectOnis.Mdl.PDM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>        
+        <th>
+            @Html.DisplayName("Nome")
+        </th>
+        <th>
+            @Html.DisplayName("Nvl")
+        </th>
+        <th>
+            @Html.DisplayName("HP")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.classeArmadura)
+        </th>
+        <th>
+            @Html.DisplayName("For")
+        </th>
+        <th>
+            @Html.DisplayName("Hab")
+        </th>
+        <th>
+            @Html.DisplayName("Con")
+        </th>
+        <th>
+            @Html.DisplayName("Int")
+        </th>
+        <th>
+            @Html.DisplayName("Sab")
+        </th>
+        <th>
+            @Html.DisplayName("Car")
+        </th>
+        <th>
+            @Html.DisplayName("Status")
+        </th>
+        <th>
+            @Html.DisplayName("Raça")
+        </th>
+        <th>
+            @Html.DisplayName("Classe")
+        </th>
+        <th>
+            @Html.DisplayName("Tipo")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nivel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.classeArmadura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.forca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.habilidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.constituicao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.inteligencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sabedoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carisma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.raca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.classe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.cod  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.cod }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.cod })
+        </td>
+    </tr>
+}
+
+</table>

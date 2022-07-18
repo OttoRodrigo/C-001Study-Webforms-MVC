@@ -1,0 +1,6 @@
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\bin\Debug\RPGProjectOnis.dll
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\bin\Debug\RPGProjectOnis.pdb
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\obj\Debug\RPGProjectOnis.csproj.CoreCompileInputs.cache
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\obj\Debug\RPGProjectOnis.dll
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\obj\Debug\RPGProjectOnis.pdb
+C:\Users\Otto_\source\repos\RPGProject\RPGProjectOnis\obj\Debug\RPGProjectOnis.csproj.AssemblyReference.cache

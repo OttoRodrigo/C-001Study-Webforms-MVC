@@ -1,0 +1,129 @@
+﻿@model RPGProjectOnis.Mdl.PDM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PDM</h4>
+    <hr />
+
+
+
+
+    <div class="row">
+        <div class="col-md-1">
+            <label>Nome</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.nome)
+        </div>
+        <div class="col-md-1">
+            <label>Nível</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.nivel)
+        </div>
+        <div class="col-md-1">
+            <label>Vida</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.vida)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Força</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.forca)
+        </div>
+        <div class="col-md-1">
+            <label>Habilidade</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.habilidade)
+        </div>
+        <div class="col-md-1">
+            <label>Constituição</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.constituicao)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Inteligencia</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.inteligencia)
+        </div>
+        <div class="col-md-1">
+            <label>Sabedoria</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.sabedoria)
+        </div>
+        <div class="col-md-1">
+            <label>Carisma</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.carisma)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>CA</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.classeArmadura)
+        </div>
+        <div class="col-md-1">
+            <label>Status</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.status)
+        </div>
+        <div class="col-md-1">
+            <label>Tipo</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.tipo)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Raça</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.raca)
+        </div>
+        <div class="col-md-1">
+            <label>Classe</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.classe)
+        </div>
+        <div class="col-md-1">
+            <label>Ouro</label>
+        </div>
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.ouro)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Loot</label>
+        </div>
+        <div class="col-md-11">
+            @Html.DisplayFor(model => model.loot)
+        </div>        
+    </div>   
+</div>
+<br />
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cod }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

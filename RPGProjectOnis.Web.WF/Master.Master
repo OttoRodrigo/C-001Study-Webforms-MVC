@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="RPGProjectOnis.Web.WF.Site1" %>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="~/CSS/MasterPageCSS.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <nav>
+                <asp:Hyperlink ID="hlCriarPersonagem" runat="server" CssClass="linkBotoes" NavigateUrl="~/CriarPersonagemPage.aspx">Criar Personagem</asp:Hyperlink>
+                <asp:Hyperlink ID="hlListaPersonagens" runat="server" CssClass="linkBotoes" NavigateUrl="~/ListaPersonagensPage.aspx">Lista de Personagens</asp:Hyperlink>
+                <asp:Hyperlink ID="hl" runat="server" CssClass="linkBotoes" >Criar Monstro</asp:Hyperlink>
+                <asp:Hyperlink ID="Hyperlink2" runat="server" CssClass="linkBotoes" >Lista de Monstros</asp:Hyperlink>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <footer>
+            <p> Site em Desenvolvimento</p>
+        </footer>
+    </form>
+</body>
+</html>

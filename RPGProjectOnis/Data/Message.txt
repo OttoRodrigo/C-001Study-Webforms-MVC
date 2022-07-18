@@ -1,0 +1,4 @@
+﻿1;S; adicionado com Sucesso!;;
+1;E;Erro ao adicionar o(a) ;!!!;
+1;V; não pode(m) ser vazio.;;
+2;V; :insira um valor entre 0 e 18.;

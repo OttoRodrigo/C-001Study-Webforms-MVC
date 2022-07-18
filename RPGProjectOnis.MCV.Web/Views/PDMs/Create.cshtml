@@ -1,0 +1,158 @@
+﻿@model RPGProjectOnis.Mdl.PDM
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div style="visibility:@ViewBag.ValidacaoSucessVisib">
+        <div class="alert alert-success" role="alert"> @ViewBag.Msg </div>
+    </div>
+
+    <div class="form-horizontal">
+        <h4>PDM</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <br />
+                    @Html.EditorFor(model => model.nome, new { htmlAttributes = new { @class = "form-control", @style = "width:98%" } })
+                    @Html.ValidationMessageFor(model => model.nome, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label style="margin-left:5px">Nível</label>
+                    <br />
+                    @Html.EditorFor(model => model.nivel, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                    @Html.ValidationMessageFor(model => model.nivel, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label style="margin-left:10px">Vida</label>
+                    <br />
+                    @Html.EditorFor(model => model.vida, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                    @Html.ValidationMessageFor(model => model.vida, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label style="margin-left:15px">CA</label>
+                    <br />
+                    @Html.EditorFor(model => model.classeArmadura, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                    @Html.ValidationMessageFor(model => model.classeArmadura, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <br />
+                    @Html.EditorFor(model => model.tipo, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                    @Html.ValidationMessageFor(model => model.tipo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 form-group">
+                <label>FOR</label>
+                <br />
+                @Html.EditorFor(model => model.forca, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.forca, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group">
+                <label>INT</label>
+                <br />
+                @Html.EditorFor(model => model.inteligencia, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.inteligencia, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group"></div>
+            <div class="col-md-3 form-group">
+                <label>Raça</label>
+                <br />
+                @Html.EditorFor(model => model.raca, new { htmlAttributes = new { @class = "form-control", @style = "width:95%" } })
+                @Html.ValidationMessageFor(model => model.raca, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-3 form-group">
+                <label>Classe</label>
+                <br />               
+                @Html.EditorFor(model => model.classe, new { htmlAttributes = new { @class = "form-control", @style = "width:95%" } })
+                @Html.ValidationMessageFor(model => model.classe, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-3 form-group">
+                <label>Status</label>
+                <br />
+                @Html.EditorFor(model => model.status, new { htmlAttributes = new { @class = "form-control", @style = "width:95%" } })
+                @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 form-group">
+                <label>HAB</label>
+                <br />
+                @Html.EditorFor(model => model.habilidade, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.habilidade, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group">
+                <label>SAB</label>
+                <br />
+                @Html.EditorFor(model => model.sabedoria, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.sabedoria, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group"></div>
+            <div class="col-md-10 form-group">
+                <label>Loot</label>
+                <br />
+                @Html.EditorFor(model => model.loot, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.loot, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 form-group">
+                <label>CON</label>
+                <br />
+                @Html.EditorFor(model => model.constituicao, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.constituicao, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group">
+                <label>CAR</label>
+                <br />
+                @Html.EditorFor(model => model.carisma, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.carisma, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1 form-group"></div>
+            <div class="col-md-1 form-group">
+                <label>Ouro</label>
+                <br />
+                @Html.EditorFor(model => model.ouro, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+                @Html.ValidationMessageFor(model => model.ouro, "", new { @class = "text-danger" })
+                <br />
+            </div>
+            @*<div class="col-md-1 form-group" style="visibility:hidden">
+                @Html.EditorFor(model => model.cod, new { htmlAttributes = new { @class = "form-control", @style = "width:90%" } })
+            </div>*@
+        </div>
+        <div class="row form-group">
+                <input type="submit" value="Create" class="btn btn-success" style="width:100%" />            
+        </div>
+
+    </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }

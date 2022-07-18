@@ -1,0 +1,188 @@
+﻿@model RPGProjectOnis.Mdl.PDM
+
+@{
+    ViewBag.Title = "CriarMonstro";
+}
+
+<h2>Criar Monstro</h2>
+
+
+@using (Html.BeginForm("criaPDM", "Monstro", FormMethod.Post )) 
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    
+    <div class="form-horizontal">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.nome)
+                        <br />
+                        @Html.EditorFor(model => model.nome, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.nome, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+
+                        @Html.LabelFor(model => model.raca)
+                        <br />
+                        @*@Html.EditorFor(model => model.raca, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @*@Html.DropDownList("dllRacas", new SelectList(ViewBag.racas, "id", "nome"))*@
+                        @*@Html.ValidationMessageFor(model => model.raca, "", new { @class = "text-danger" })*@
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.classe)
+                        <br />
+                        @Html.EditorFor(model => model.classe, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.classe, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            @Html.LabelFor(model => model.nivel)
+                            <br />
+                            @Html.EditorFor(model => model.nivel, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.nivel, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.LabelFor(model => model.classeArmadura)
+                            <br />
+                            @Html.EditorFor(model => model.classeArmadura, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.classeArmadura, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-sm-4">
+                            @Html.LabelFor(model => model.vida)
+                            <br />
+                            @Html.EditorFor(model => model.vida, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.vida, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <label id="lbFor">For</label>
+                            <br />
+                            @Html.EditorFor(model => model.forca, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.forca, "", new { @class = "text-danger" })
+                            <br />
+                            <label id="lbDes">Des</label>
+                            @Html.EditorFor(model => model.habilidade, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.habilidade, "", new { @class = "text-danger" })
+                            <br />
+                            <label id="lbCon">Con</label>
+                            @Html.EditorFor(model => model.constituicao, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.constituicao, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-sm-6">
+                            <label id="lbDes">Int</label>
+                            @Html.EditorFor(model => model.inteligencia, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.inteligencia, "", new { @class = "text-danger" })
+                            <br />
+                            <label id="lbDes">Sab</label>
+                            @Html.EditorFor(model => model.sabedoria, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.sabedoria, "", new { @class = "text-danger" })
+                            <br />
+                            <label id="lbCon">Car</label>
+                            @Html.EditorFor(model => model.carisma, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.carisma, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h3>Habilidades da Raça</h3>
+                    <label id="lbTtlRaca1">Titulo Habs Raça</label>
+                    <br />
+                    <p id="lbDescRaca1">Descrição Habs Raça</p>
+                    <label id="lbTtlRaca2">Titulo Habs Raça</label>
+                    <br />
+                    <p id="lbDescRaca2">Descrição Habs Raça</p>
+                    <label id="lbTtlRaca3">Titulo Habs Raça</label>
+                    <br />
+                    <p id="lbDescRaca3">Descrição Habs Raça</p>
+                </div>
+                <div class="col-sm-5">
+                    <h3>Habilidades da Classe</h3>
+                    <label id="lbTtlClass1">Titulo Habs Classe</label>
+                    <br />
+                    <p id="lbDescClass1">Descrição Habs Classe</p>
+                    <label id="lbTtlClass2">Titulo Habs Classe</label>
+                    <br />
+                    <p id="lbDescClass2">Descrição Habs Classe</p>
+                    <label id="lbTtlClass3">Titulo Habs Classe</label>
+                    <br />
+                    <p id="lbDescClass3">Descrição Habs Classe</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.tipo)
+                        <br />
+                        @Html.EditorFor(model => model.tipo, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.tipo, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.loot, htmlAttributes: new { @style = "margin-left: 10px" })
+                        <br />
+                        @Html.EditorFor(model => model.loot, new { htmlAttributes = new { @class = "form-control", @style = "margin-left: 10px" } })
+                        @Html.ValidationMessageFor(model => model.loot, "", new { @class = "text-danger" })
+                    </div>
+                </div>               
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.status)
+                        <br />
+                        @Html.EditorFor(model => model.status, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.ouro, htmlAttributes: new { @style = "margin-left: 10px" })
+                            <br />
+                            @Html.EditorFor(model => model.ouro, new { htmlAttributes = new { @class = "form-control", @style = "margin-left: 10px" } })
+                            @Html.ValidationMessageFor(model => model.ouro, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <div style="margin-left:15px; margin-top:5px">
+                                <br />
+                                <input type="submit" value="Create" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7"></div>
+                </div>
+        </div>
+
+    </div>
+ }
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

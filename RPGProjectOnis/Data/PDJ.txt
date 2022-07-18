@@ -1,0 +1,16 @@
+1;abubu;1;10;0;7;5;6;3;4;8;1;8;5;otto;Cota de malha e Arco Longo com 20 flechasUma Arma Marcial e um EscudoDois machados de arremessoUm pacote de aventureiro;0;
+2;xifu;1;12;0;6;5;6;5;6;7;1;1;1;mia;Um machado grandeQualquer arma simplesUm pacote de aventureiro e quatro azagaias;0;
+3;xuxu;1;10;0;11;8;10;8;8;8;1;1;5;;|Um pacote de aventureiro;0;
+4;oslo;3;10;0;11;9;10;7;8;5;1;8;5;drfds;Cota de malha e Arco Longo com 20 flechas|Uma Arma Marcial e um Escudo|Uma besta leve e 20 virotes|Um pacote de explorador;0;
+5;oslo;5;10;0;11;9;10;7;8;5;1;8;5;drfds;Cota de malha e Arco Longo com 20 flechas|Uma Arma Marcial e um Escudo|Uma besta leve e 20 virotes|Um pacote de explorador;0;
+6;tttt;1;12;0;8;8;9;8;8;9;1;1;1;dszfdf;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+7;tttt;1;12;0;8;8;9;8;8;9;1;1;1;dszfdf;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+8;tttt;1;12;0;8;8;9;8;8;9;1;1;1;dszfdf;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+9;tttt;2;12;0;11;8;6;8;8;9;1;1;1;mia;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+10;xuxu;1;10;0;12;9;5;8;4;8;1;8;5;;Cota de malha e Arco Longo com 20 flechas|Uma Arma Marcial e um Escudo|Dois machados de arremesso|Um pacote de aventureiro;0;
+11;l;1;12;0;10;3;8;8;9;8;1;1;1;~ç];Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+12;claustr;1;12;0;2;1;3;1;1;1;1;1;1;dgdf;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+13;bgjh;1;12;0;5;4;6;4;4;4;1;1;1;hgjjh;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+14;hjhk.;1;12;0;10;1;10;7;7;8;1;1;1;gk,j;Um machado grande|Dois machados de mão|Um pacote de aventureiro e quatro azagaias|;0;
+15;Borco;1;10;0;6;9;10;1;8;2;1;1;5;Cadu;Cota de malha e Arco Longo com 20 flechas|Uma Arma Marcial e um Escudo|Uma besta leve e 20 virotes|Um pacote de aventureiro;0;
+16;Borco;1;10;0;6;9;10;1;8;2;1;1;5;Cadu;Cota de malha e Arco Longo com 20 flechas|Uma Arma Marcial e um Escudo|Uma besta leve e 20 virotes|Um pacote de aventureiro;0;
